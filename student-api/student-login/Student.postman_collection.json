@@ -1,0 +1,631 @@
+{
+	"info": {
+		"_postman_id": "946449b2-d5a2-4a94-b4d8-4ecee411db69",
+		"name": "Student",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23391966"
+	},
+	"item": [
+		{
+			"name": "add-student-data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "jenish",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jenishmangukiya800@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "2351",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8764545476",
+							"type": "text"
+						},
+						{
+							"key": "course",
+							"value": "node.js",
+							"type": "text"
+						},
+						{
+							"key": "fees",
+							"value": "85000",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "surat",
+							"type": "text"
+						},
+						{
+							"key": "facultyid",
+							"value": "637c7f0cfaa008df761e0452",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/student/register",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"student",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-student-data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:9005/student/deleted?id=637c7c3e764bf1b9b8fc0213",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"student",
+						"deleted"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "637c7c3e764bf1b9b8fc0213"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view-student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:9005/student/viewstudent",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"student",
+						"viewstudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "janish",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "janishmangukiya800@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "414141",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8764545495",
+							"type": "text"
+						},
+						{
+							"key": "course",
+							"value": "node.js",
+							"type": "text"
+						},
+						{
+							"key": "fees",
+							"value": "85000",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "surat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/student/updatestudent?id=637c7b439cae29081df53b40",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"student",
+						"updatestudent"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "637c7b439cae29081df53b40"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "faculty register Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "kishan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kishan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "87654",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8764545432",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "anguler.js",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "surat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/faculty/register",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"faculty",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "faculty login Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "kishan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "87654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/login/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"login",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "faculty index Copy 3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdjN2YwY2ZhYTAwOGRmNzYxZTA0NTIiLCJuYW1lIjoia2lzaGFuIiwiZW1haWwiOiJraXNoYW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiI4NzY1NCIsInBob25lIjo4NzY0NTQ1NDMyLCJkZXNpZ25hdGlvbiI6ImFuZ3VsZXIuanMiLCJjaXR5Ijoic3VyYXQiLCJfX3YiOjAsImlhdCI6MTY2OTEwMzM5MCwiZXhwIjoxNjY5NDAzMzkwfQ._jfwx8yz-_P8SW1EkGogwN-3ONp0wISaMuO5arnknWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/login/index",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"login",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "faculty profile Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "jenish",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jenishmangukiya5830@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8764545490",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "node.js",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "surat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/dashbord/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"dashbord",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verifyed otp Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "otp",
+							"value": "249225",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/login/otp",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"login",
+						"otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgot password faculty Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jenishmangukiya5830@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/login/forgot",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"login",
+						"forgot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "faculty password chang Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "5656",
+							"type": "text"
+						},
+						{
+							"key": "cpassword",
+							"value": "5656",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/login/chang",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"login",
+						"chang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jenishmangukiya800@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "4535",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/studentlogin/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"studentlogin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-index",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdjN2Y5ZWZhYTAwOGRmNzYxZTA0NTgiLCJuYW1lIjoiamVuaXNoIiwiZW1haWwiOiJqZW5pc2htYW5ndWtpeWE4MDBAZ21haWwuY29tIiwicGFzc3dvcmQiOiIyMzUxIiwicGhvbmUiOjg3NjQ1NDU0NzYsImNvdXJzZSI6Im5vZGUuanMiLCJmZWVzIjo4NTAwMCwiY2l0eSI6InN1cmF0IiwiZmFjdWx0eWlkIjoiNjM3YzdmMGNmYWEwMDhkZjc2MWUwNDUyIiwiX192IjowLCJpYXQiOjE2NjkxMDg2ODIsImV4cCI6MTY2OTQwODY4Mn0.PZ5mNrFw9HhPmoYnWZzYAIluMOZwgoijwscGZoNsFj4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/studentlogin/index",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"studentlogin",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-verifiay-otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "otp",
+							"value": "448359",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/studentlogin/otp",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"studentlogin",
+						"otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-forgot-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jenishmangukiya800@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/studentlogin/forgot",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"studentlogin",
+						"forgot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-password-chang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "4535",
+							"type": "text"
+						},
+						{
+							"key": "cpassword",
+							"value": "4535",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9005/studentlogin/chang",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"studentlogin",
+						"chang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9005/studentlogin/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"studentlogin",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

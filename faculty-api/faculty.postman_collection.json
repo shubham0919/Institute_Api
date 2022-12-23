@@ -1,0 +1,438 @@
+{
+	"info": {
+		"_postman_id": "c9064e70-e08c-458d-87c9-d380574c5594",
+		"name": "faculty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23391966"
+	},
+	"item": [
+		{
+			"name": "faculty register Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "kishan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kishan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "87654",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8764545432",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "anguler.js",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "surat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9004/faculty/register",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"faculty",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "faculty login Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "kishan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "87654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9004/login/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"login",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "faculty index Copy 2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdiNDExZWY5MzdlZTYwMWIwODQyZDkiLCJuYW1lIjoia2lzaGFuIiwiZW1haWwiOiJraXNoYW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiI4NzY1NCIsInBob25lIjo4NzY0NTQ1NDMyLCJkZXNpZ25hdGlvbiI6ImFuZ3VsZXIuanMiLCJjaXR5Ijoic3VyYXQiLCJfX3YiOjAsImlhdCI6MTY2OTAyMTk5MSwiZXhwIjoxNjY5MzIxOTkxfQ.508OKWvN6CzMntUfPRPKrrqpRZNnWC6eI_Sfg4-5JeA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9004/login/index",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"login",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "faculty profile Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "jenish",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jenishmangukiya5830@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8764545490",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "node.js",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "surat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9004/dashbord/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"dashbord",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verifyed otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "otp",
+							"value": "249225",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9004/login/otp",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"login",
+						"otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgot password faculty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jenishmangukiya5830@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9004/login/forgot",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"login",
+						"forgot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "faculty password chang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "5656",
+							"type": "text"
+						},
+						{
+							"key": "cpassword",
+							"value": "5656",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9004/login/chang",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"login",
+						"chang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertData Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "kishan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kishan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "87654",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8764545432",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "anguler.js",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "surat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9004/login/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"login",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletfacultydata Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:9004/faculty/deleted?id=6377390b0b7610caabe4adff",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"faculty",
+						"deleted"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6377390b0b7610caabe4adff"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewfaculty Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9004/faculty/viewfaculty",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"faculty",
+						"viewfaculty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatefaculty Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "kishan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kishan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "87654",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8764545432",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "anguler.js",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "surat",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9004/faculty/updatefaculty?id=637736a00eac1adb1fb2e3c4",
+					"host": [
+						"localhost"
+					],
+					"port": "9004",
+					"path": [
+						"faculty",
+						"updatefaculty"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "637736a00eac1adb1fb2e3c4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
